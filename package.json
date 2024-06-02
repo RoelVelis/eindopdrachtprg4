@@ -1,12 +1,14 @@
 {
   "name": "@excaliburjs/Eindprojectprg4",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.0.0",
+  "type": "module",
   "description": "Eindproject PRG4",
   "scripts": {
     "build:prod": "webpack --mode production",
     "build:dev": "webpack --mode development",
-    "dev": "webpack-dev-server --mode development --open",
+    "dev": "vite",
+    "build": "vite build --outDir=docs --base=./",
     "start": "webpack-dev-server --mode development --open",
     "test": "npm run build:prod && ex-test -d ./dist -t ./test/test.js"
   },
