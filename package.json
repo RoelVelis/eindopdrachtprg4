@@ -8,7 +8,7 @@
     "build:prod": "webpack --config webpack.config.mjs --mode production",
     "build:dev": "webpack --config webpack.config.mjs --mode development",
     "dev": "vite",
-    "build": "vite build --outDir=docs --base=./",
+    "build": "vite build --outDir=docs --base=/eindopdrachtprg4",
     "start": "webpack-dev-server --config webpack.config.mjs --mode development --open",
     "test": "npm run build:prod && ex-test -d ./dist -t ./test/test.js"
   },
