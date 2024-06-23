@@ -5,11 +5,11 @@
   "type": "module",
   "description": "Eindproject PRG4",
   "scripts": {
-    "build:prod": "webpack --mode production",
-    "build:dev": "webpack --mode development",
+    "build:prod": "webpack --config webpack.config.mjs --mode production",
+    "build:dev": "webpack --config webpack.config.mjs --mode development",
     "dev": "vite",
     "build": "vite build --outDir=docs --base=./",
-    "start": "webpack-dev-server --mode development --open",
+    "start": "webpack-dev-server --config webpack.config.mjs --mode development --open",
     "test": "npm run build:prod && ex-test -d ./dist -t ./test/test.js"
   },
   "dependencies": {
